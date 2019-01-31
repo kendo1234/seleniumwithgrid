@@ -15,4 +15,14 @@ Node
 
 - docker run -d --net seleniumsandbox -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:latest
 
-TODO: Explore Selenoid
+Selenoid Build
+
+- curl -s https://aerokube.com/cm/bash | bash \
+      && ./cm selenoid start --vnc --tmpfs 128
+      
+- ./cm selenoid-ui start
+
+
+NOTE: Current driver setup in FirstTest is for selenoid 
+
+      

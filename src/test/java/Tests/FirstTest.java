@@ -6,6 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
@@ -18,9 +19,13 @@ public class FirstTest {
     //Setup Driver
     @BeforeClass
     public static void setupTest() throws MalformedURLException {
-        ChromeOptions options = new ChromeOptions();        //For Firefox use below capabilities
-        //DesiredCapabilities caps = DesiredCapabilities.firefox();
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+        DesiredCapabilities dcap = DesiredCapabilities.chrome();
+        ChromeOptions options = new ChromeOptions();
+        dcap.setCapability(ChromeOptions.CAPABILITY, options);
+        dcap.setCapability("enableVNC", true);
+        dcap.setBrowserName("chrome");
+        dcap.setVersion("71.0");
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dcap);
     }
 
     @Test
