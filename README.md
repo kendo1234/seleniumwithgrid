@@ -25,4 +25,13 @@ Selenoid Build
 
 NOTE: Current driver setup in FirstTest is for selenoid 
 
+### Docker Compose ###
+
+I have included a docker compose file that sets up a hub and node. This is NOT for Selenoid, but a normal Grid-Docker implementation. 
+
+To run - *docker-compose up*
+
+Example of scaling up to 5 chrome nodes - *docker-compose scale chrome=5*
+
+
       
