@@ -22,9 +22,7 @@ public class FirstTest {
         DesiredCapabilities dcap = DesiredCapabilities.chrome();
         ChromeOptions options = new ChromeOptions();
         dcap.setCapability(ChromeOptions.CAPABILITY, options);
-        dcap.setCapability("enableVNC", true);
         dcap.setBrowserName("chrome");
-        dcap.setVersion("71.0");
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dcap);
     }
 
