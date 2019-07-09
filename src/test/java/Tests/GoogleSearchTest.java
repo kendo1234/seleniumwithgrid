@@ -12,13 +12,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class FirstTest {
+public class GoogleSearchTest {
 
     static WebDriver driver;
 
     //Setup Driver
     @BeforeClass
     public static void setupTest() throws MalformedURLException {
+
         DesiredCapabilities dcap = DesiredCapabilities.chrome();
         ChromeOptions options = new ChromeOptions();
         dcap.setCapability(ChromeOptions.CAPABILITY, options);

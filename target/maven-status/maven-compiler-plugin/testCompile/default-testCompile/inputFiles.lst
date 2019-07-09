@@ -1,3 +1,6 @@
-/home/dean/Desktop/dockergridexample/src/test/java/Components/GoogleHome.java
-/home/dean/Desktop/dockergridexample/src/test/java/Components/DriverFactory.java
-/home/dean/Desktop/dockergridexample/src/test/java/Tests/FirstTest.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Tests/GoogleSearchTest.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Components/DriverFactory.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Components/GoogleHome.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Tests/TheInternetTest.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Components/TheInternetHome.java
+/home/kendo/Desktop/devtools/seleniumwithgrid/src/test/java/Tests/DualDriverTest.java
